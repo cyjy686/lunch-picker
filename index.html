@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>今天中午吃什么</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍽️ 今天中午吃什么？</h1>
+            <p class="subtitle">让命运来决定吧！</p>
+        </header>
+
+        <main>
+            <div class="result-section" id="resultSection">
+                <div class="result-box" id="resultBox">
+                    <span id="resultText">点击下方按钮开始选择</span>
+                </div>
+            </div>
+
+            <button class="pick-button" id="pickButton" onclick="startPicking()">
+                🎲 开始随机选！
+            </button>
+
+            <div class="config-toggle" onclick="toggleConfig()">
+                ⚙️ 配置选项（<span id="optionCount">0</span>/10）
+            </div>
+
+            <div class="config-section" id="configSection" style="display: none;">
+                <div class="options-container" id="optionsContainer"></div>
+                <button class="add-option-btn" onclick="addOption()">+ 添加选项</button>
+                <div class="preset-buttons">
+                    <button class="preset-btn" onclick="loadPreset('chinese')">中餐预设</button>
+                    <button class="preset-btn" onclick="loadPreset('fast')">快餐预设</button>
+                    <button class="preset-btn" onclick="loadPreset('healthy')">健康餐预设</button>
+                </div>
+                <button class="save-btn" onclick="saveOptions()">💾 保存配置</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>已选择 <span id="historyCount">0</span> 次 | 
+               <a href="#" onclick="clearHistory()">清空记录</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
