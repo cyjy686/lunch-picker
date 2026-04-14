@@ -127,7 +127,7 @@ function loadOptions() {
     if (saved) {
         options = JSON.parse(saved);
     } else {
-        options = ['米线', '湘喜天下', '湘了个西', '鸡公煲', '醉面', '和府捞面', '达美乐'];
+        options = ['米线', '湘喜天下', '湘了个西', '鸡公煲', '醉面', '和府捞面', '达美乐', '猪脚饭', '麻辣烫'];
     }
 }
 
