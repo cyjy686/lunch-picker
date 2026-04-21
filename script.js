@@ -127,7 +127,7 @@ function loadOptions() {
     if (saved) {
         options = JSON.parse(saved);
     } else {
-        options = ['米线', '湘喜天下', '湘了个西', '鸡公煲', '猪脚饭'];
+        options = ['米线', '湘喜天下', '湘了个西', '鸡公煲', '猪脚饭', '武汉非遗', '飞哥'];
     }
 }
 
